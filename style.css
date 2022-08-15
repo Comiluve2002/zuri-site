@@ -16,7 +16,6 @@
 
 body{
     margin: 0;
-    width: 100%;
    
 }
 .header{
@@ -30,13 +29,12 @@ body{
 
 .header img{
     padding: 66px 0 53px;
-    text-align: center;
+   
 }
 
 .header h1{
     font-size: 32px;
     line-height: 48px;
-    text-align: center;
     font-weight: 800;
     color: #514949;
     margin-bottom: 36px;
@@ -47,7 +45,10 @@ body{
     line-height: 24px;
     color: #514949;
     opacity: 0.9;
-    padding: 0 23.5%;
+    padding-top: 0;
+    max-width: 700px;
+    margin: auto;
+    
 }
 
 .red {
@@ -57,6 +58,8 @@ body{
 
 .btn{
     margin-top: 92px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-red a{
@@ -962,13 +965,9 @@ h1{
     margin-bottom: 40px;
 }
 
-.vett{}
-
 .hire-img img{
-    height: 420px;
-}
- .hire-img img{
     width: 100%;
+    height: 420px;
 } 
 
  .vetted{
@@ -1028,11 +1027,114 @@ h1{
     width: 100px;
 }
 /*section-2 */
-/* .section-2{
+.section-2{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    align-items: center;
     background-image: url("https://talent.zuri.team/static/media/bgsection2.063bd869082548bafa74.png")!important;
     background-repeat: no-repeat!important;
     background-size: cover!important;
-} */
+}
+
+.impact{
+    width: 50%;
+}
+
+.people img{
+    width: 100%;
+    height: 380px;
+}
+
+.flags {
+    mix-blend-mode: normal;
+   display: flex;
+   justify-items: center;
+   align-items: center;  
+}
+
+.flag{
+    background-color: #fff;
+    margin: 6px;
+    padding: 11px 11px 9px;
+    border-radius: 8px;
+}
+
+.flag img{
+    height: 40px;
+}
+
+.flagU{
+    padding: 11px 13px 9px;
+}
+
+.flagG img{
+    height: 35px;
+}
+
+.flagG{
+    padding: 13px 10px;
+}
+
+.talent{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 7px auto 7px;
+}
+
+.talent2{
+    font-size: 20px;
+    color: #787878;
+    margin-top: 0;  
+}
+
+@media only screen and (max-width: 1200px) {
+    .left-dot, .right-dot{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .cards{
+        flex-wrap: wrap;
+    }
+    .left-dot, .right-dot{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .header{
+        height: 580px;
+    }
+    .btn{
+        flex-direction: column;
+    }
+    .red-btn{
+        margin-bottom: 45px; 
+        margin-left: 20px;   
+    }
+    .interact{
+        flex-direction: column;
+        text-align: center;
+    }
+    .all-h3{
+        font-size: 24px;
+        padding-top: 25px;
+    }
+    .zuri-i{
+        height: 30px;
+    }
+
+    .entry-level h3{
+        margin-top: 70px;
+    }
+    .entry-level p{
+        padding-bottom: 40px;
+    }
+}
+
 
 
 
