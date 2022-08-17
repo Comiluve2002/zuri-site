@@ -311,57 +311,77 @@ a{
 
 .section-A{
     text-align: center;
-    height: 815px;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom: 170px;
+    /* padding: 0 60px; */
 }
 
-.p1{
-    padding-top: 180px;
+.sectionA-cont2{
+    margin: auto;
+    max-width: 100%;
 }
 
 .para1{
     color: #E7332B;
     font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.p1 .para2{
+    width: 97%;
 }
 
 .para2{
     color: #000;
     font-size: 52px;
-    width: 44%;
-    margin: auto;
     font-weight: bold;
     line-height: 1;
+    margin-top: 0;
+    margin: auto;
+    padding-bottom: 50px;
 }
 
-.section-A .img1{
-   height: 320px;
-   position: absolute;
-   top: 318px;
-   left: 40px;
-   
+.img1{
+   width: 800px;
+   height: 300px;
+   margin-top: 150px;
+   padding-left: 60px;
 }
 
-.section-A .img2{
-    height: 350px;
-    position: absolute;
-    right: 50px;
-    top: 300px;
-    
+.img1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img2{
+    width: 850px;
+    height: 380px;
+    margin-top: 100px;
+    padding-right: 50px;
  }
 
- .section-A .img3{
-    width: 15%;
+.img2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.img3 img{
+    width: 120px;
+    height: 20pxpx;
     position: absolute;
-    right: 400px;
-    top: 465px;
-    height: 20.84px;
-    
- }
+    right: 470px;
+    top: 445px;
+    height: 20.84px; 
+ } 
 
  .p2{
-    width: 399px;
-    margin: auto;
-    padding: 52px 0;
-    font-size: 18px;
+     width: 399px;
+     margin: auto;
+     padding: 0 0 58px 0;
+     font-size: 19px;
+     color: #585757;
  }
 
  img{
@@ -382,8 +402,8 @@ a{
     width: 82%;
     font-size: 24px;
     font-weight: bold;
-    margin: auto;
-    margin-left: 60px;
+    margin: auto; 
+    padding-left: 0 35px; 
     padding-top: 30px;
  }
 
@@ -421,7 +441,6 @@ a{
     top: 625px;
  }
 
- 
 .hr{
     opacity: 0.1;
     border: 0.7px solid #514949;
@@ -454,8 +473,8 @@ a{
 
 
 .training-p2{
-    font-size: 42px;
-    width: 58%;
+    font-size: 40px;
+    width: 55%;
     font-weight: bold;
     margin-top: 0;
 }
@@ -604,7 +623,7 @@ a{
 .secE-img2 img{
     mix-blend-mode: normal;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
     width: 11%;
 }
 
@@ -1088,22 +1107,18 @@ h1{
     margin-top: 0;  
 }
 
-@media only screen and (max-width: 1200px) {
-    .left-dot, .right-dot{
-        display: none;
+@media only screen and (max-width: 600px) {
+    .ingressive2 p{
+       text-align: center;
     }
-}
 
-@media only screen and (max-width: 993px) {
-    .cards{
-        flex-wrap: wrap;
-    }
-    .left-dot, .right-dot{
-        display: none;
-    }
-}
-
-
+    .img1 img{
+        margin: auto;
+        width: 130%!important;
+        height: 10%;
+    } 
+ }  
+    
 @media only screen and (max-width: 700px) {
     .header{
         height: 580px;
@@ -1114,6 +1129,11 @@ h1{
     .red-btn{
         margin-bottom: 45px; 
         margin-left: 20px;   
+    }
+    .para2{
+        /* font-size: 25px;
+        width: 60%;
+        margin: auto; */
     }
     .interact{
         flex-direction: column;
@@ -1133,7 +1153,174 @@ h1{
     .entry-level p{
         padding-bottom: 40px;
     }
+    .logo img{
+        height: 20px;
+    }
+    .thumbs{
+        margin-left: -27px!important;
+        width: 55px!important;
+        mix-blend-mode: normal;
+    }
+    .enroll{
+        margin-top: 12px;
+    }
+    .ind-btn{
+        width: 75px;
+        padding: 9px 32px;
+    }
 }
+
+@media only screen and (max-width: 880px) {
+    .b-star{
+        display: none;
+    }
+    /* .sec-training{
+        padding-bottom: 0;
+       } */
+ }  
+    
+
+@media only screen and (max-width: 900px) {
+    #section-B{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ingressive2 p{
+        width: 100%;
+        margin-right: 0;
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    .ingressive p{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+   .ingressive-img{
+    text-align: center;
+    margin-left: 0;
+   }
+   .sec-training{
+    flex-wrap: wrap;
+    padding-bottom: 170px;
+   }
+   .training-p2{
+    font-size: 28px;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 70px;
+   }
+   .star{
+    height: 180px;
+    position: absolute;
+    left: 150px;   
+   }
+   .boxes{
+     grid-template-columns: auto;
+   }
+   .boxes-div{
+    padding-bottom: 50px;
+   }
+   .btn-teams{
+    flex-flow: wrap;
+    width: 100%;
+
+}
+.btn-team{
+    margin: 100px;
+}
+
+}
+
+@media only screen and (max-width: 993px) {
+    .cards{
+        flex-wrap: wrap;
+    }
+    .left-dot, .right-dot{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .nav-link{
+        display: none;
+    }
+}
+    
+
+@media only screen and (max-width: 1200px) {
+    .left-dot, .right-dot{
+        display: none;
+    }
+    .section-A{
+        flex-wrap: wrap;
+        margin-top: 100px;
+    } 
+    .img1{
+        margin: auto;
+        width: 70%!important;
+        height: 20%;
+    } 
+    .img2{
+         display: none;
+         margin-right: 0;
+    }
+    .sectionA-cont2{
+        margin-top: -50px;
+    }
+    .para1{
+        margin-top: 0;
+    }
+    .img3 img{
+        height: 100%;
+        width: 100%; 
+        position: absolute;
+        right: 170px;
+        top: 880px;
+        height: 20.84px; 
+     } 
+     .male-face{
+            height: 60px;
+            position: absolute;
+            left: 100px;
+            top: 1085px;
+     }
+     #section-D{
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+     }
+     .get-started{
+        text-align: start;
+        font-size: 18px;
+        width: 100%;
+        padding-right: 80px;
+    }
+    
+    .getstarted-p1{
+         font-size: 30px;
+         width: 100%;
+    }
+    .getstarted-p2{
+        font-size: 18px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .btn-teams{
+        display: flex;
+        width: 100%;
+    }
+    .btn-team{
+        margin: 10px;
+    }
+    .secE-img2 img{
+        width: 15%;
+    }
+ 
+   
+}
+   
+
 
 
 
